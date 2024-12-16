@@ -1,14 +1,13 @@
 /* General Styles */
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    background: linear-gradient(135deg, #f0f2f5, #cfd9df);
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
     margin: 0;
     padding: 0;
     color: #333;
 }
-
 header {
-    background-color: #007bff;
+    background-color: #00796b; 
     color: #fff;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -27,7 +26,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #ffb6c1; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -51,7 +50,7 @@ header nav ul li a:hover {
 .main-content h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #00796b;
 }
 
 .error-message {
@@ -60,7 +59,7 @@ header nav ul li a:hover {
 }
 
 .register-link {
-    color: #007bff;
+    color: #00796b;
     text-decoration: none;
 }
 
@@ -95,7 +94,7 @@ header nav ul li a:hover {
 .vote-button {
     margin-right: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #00796b;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -104,11 +103,11 @@ header nav ul li a:hover {
 }
 
 .vote-button:hover {
-    background-color: #0056b3;
+    background-color: #ff6f61;
 }
 
 footer {
-    background-color: #007bff;
+    background-color: #00796b;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -135,7 +134,7 @@ footer p {
 
 .login-container h2 {
     margin-bottom: 20px;
-    color: #007bff;
+    color: #00796b;
 }
 
 .login-container .form-group {
@@ -157,7 +156,7 @@ footer p {
 }
 
 .login-container .form-group input:focus {
-    border-color: #007bff;
+    border-color: #00796b;
     outline: none;
 }
 
@@ -165,7 +164,7 @@ footer p {
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #007bff;
+    background-color: #00796b;
     color: #fff;
     font-size: 16px;
     border-radius: 5px;
@@ -174,5 +173,5 @@ footer p {
 }
 
 .login-container .action-button:hover {
-    background-color: #0056b3;
+    background-color: #00796b;
 }
