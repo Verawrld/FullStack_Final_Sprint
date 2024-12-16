@@ -1,7 +1,7 @@
 /* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f2f5, #cfd9df);
     margin: 0;
     padding: 0;
     color: #333;
@@ -10,7 +10,8 @@ body {
 header {
     background-color: #007bff;
     color: #fff;
-    padding: 15px 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header nav ul {
@@ -29,9 +30,11 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
+    color: #ffdd57;
     text-decoration: underline;
 }
 
@@ -40,64 +43,15 @@ header nav ul li a:hover {
     margin: 40px auto;
     padding: 30px;
     background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
 }
 
 .main-content h1 {
-    font-size: 36px;
+    font-size: 2.5em;
     margin-bottom: 20px;
-}
-
-.main-content form {
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-input-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    width: 100%;
-    max-width: 500px;
-}
-
-.form-input-container label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-input-container input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-}
-
-.action-button {
-    border: none;
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.action-button:hover {
-    background-color: #0056b3;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
+    color: #007bff;
 }
 
 .error-message {
@@ -116,6 +70,17 @@ header nav ul li a:hover {
 
 .poll-container {
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.poll-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .poll-options {
@@ -129,4 +94,85 @@ header nav ul li a:hover {
 
 .vote-button {
     margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vote-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Login Page Styles */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.login-container .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-container .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.login-container .action-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container .action-button:hover {
+    background-color: #0056b3;
 }

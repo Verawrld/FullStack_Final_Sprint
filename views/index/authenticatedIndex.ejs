@@ -13,7 +13,9 @@
       <a href="/createPoll" class="action-button">Create a New Poll</a>
       <ul id="polls">
         <% if (polls.length === 0) { %>
-        <li>No polls available. <a href="/createPoll">Create a new poll</a></li>
+        <li class="poll-container">
+          No polls available. <a href="/createPoll">Create a new poll</a>
+        </li>
         <% } else { %> <% polls.forEach((poll) => { %>
         <li class="poll-container" id="<%= poll.id %>">
           <h2><%= poll.question %></h2>

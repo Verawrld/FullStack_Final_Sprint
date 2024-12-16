@@ -8,24 +8,22 @@
   </head>
   <body>
     <%- include('index/header', { user: user }) %>
-    <div class="main-content">
-      <h1>Create a New Poll</h1>
+    <div class="login-container">
+      <h2>Create a New Poll</h2>
       <form action="/createPoll" method="POST">
-        <div class="form-input-container">
+        <div class="form-group">
           <label for="question">Poll Question:</label>
           <input type="text" id="question" name="question" required />
         </div>
-        <div class="form-input-container">
+        <div class="form-group">
           <label for="option1">Option 1:</label>
           <input type="text" id="option1" name="options[Option 1]" required />
         </div>
-        <div class="form-input-container">
+        <div class="form-group">
           <label for="option2">Option 2:</label>
           <input type="text" id="option2" name="options[Option 2]" required />
         </div>
-        <button type="submit" class="action-button full-width">
-          Create Poll
-        </button>
+        <button type="submit" class="action-button">Create Poll</button>
       </form>
     </div>
   </body>

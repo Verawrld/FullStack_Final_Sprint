@@ -8,21 +8,21 @@
   </head>
   <body>
     <%- include('index/header', { user: null }) %>
-    <div class="main-content">
-      <h1>Sign Up</h1>
-      <form action="/signup" method="post" style="width: 300px">
+    <div class="login-container">
+      <h2>Sign Up</h2>
+      <form action="/signup" method="post">
         <% if (errorMessage) { %>
         <p class="error-message"><%= errorMessage %></p>
         <% } %>
-        <div class="form-input-container">
+        <div class="form-group">
           <label for="username">Username:</label>
           <input type="text" id="username" name="username" required />
         </div>
-        <div class="form-input-container">
+        <div class="form-group">
           <label for="password">Password:</label>
           <input type="password" id="password" name="password" required />
         </div>
-        <button type="submit" class="action-button full-width">Sign Up</button>
+        <button type="submit" class="action-button">Sign Up</button>
       </form>
       <p style="font-size: 12px; margin-top: 30px">
         Already have an account?
